@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         pref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
 
+        //저장된 값을 로드
+        n = pref.getInt("save",0);
+
         value = findViewById(R.id.value);
         btn_up = findViewById(R.id.btn_UP);
         btn_down = findViewById(R.id.btn_down);
